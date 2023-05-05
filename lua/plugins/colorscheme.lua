@@ -1,11 +1,11 @@
-vim.g.sonokai_style = "maia"
+vim.g.sonokai_style = "atlantis"
+vim.g.colorscheme = "sonokai"
 vim.g.sonokai_better_performance = 1
 
 return {
-  -- add sonokai colorscheme
-  { "sainnhe/sonokai" },
-
-  -- Configure LazyVim to load gruvbox
+  {
+    "sainnhe/sonokai",
+  },
   {
     "LazyVim/LazyVim",
     opts = {
