@@ -9,6 +9,7 @@ return {
     "jose-elias-alvarez/null-ls.nvim",
     opts = function(_, opts)
       local nls = require("null-ls")
+      nls.builtins.formatting.prettierd.with({ extra_filetypes = { "liquid" } })
       table.insert(opts.sources, nls.builtins.formatting.prettierd)
     end,
   },
