@@ -11,3 +11,5 @@ function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+map("n", "<C-d>", "<C-d>zz", {})
+map("n", "<C-u>", "<C-u>zz", {})
