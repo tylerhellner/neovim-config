@@ -8,7 +8,7 @@ echo $'\n[ BREW ] - Update'
 brew update
 
 echo $'\n[ BREW ] - Install or Upgrade Shopify-Cli'
-brew install shopify-cli
+brew install shopify-cli proselint
 
 # Node Packages
 echo $'\n[ pnpm ] - Install Node Packages'

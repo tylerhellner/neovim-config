@@ -5,5 +5,6 @@ return { -- NULL-LS
     table.insert(opts.sources, null_ls.builtins.diagnostics.markdownlint_cli2)
     table.insert(opts.sources, null_ls.builtins.diagnostics.alex)
     table.insert(opts.sources, null_ls.builtins.code_actions.proselint)
+    table.insert(opts.sources, null_ls.builtins.diagnostics.proselint)
   end,
 }
