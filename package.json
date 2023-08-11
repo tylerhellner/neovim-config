@@ -1,0 +1,10 @@
+{
+  "name": "neovim-config",
+  "version": "1.0.0",
+  "description": "My NeoVim Config, and it can be yours too!",
+  "main": "",
+  "keywords": [],
+  "author": "Tyler Hellner",
+  "license": "ISC",
+  "packageManager": "pnpm@8.6.12"
+}
