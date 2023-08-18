@@ -3,9 +3,12 @@ return {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
-      ---@type lspconfig.options
+      ---@class lspconfig.options
       servers = {
         theme_check = {},
+        tailwindcss = {
+          filetypes = { "svelte", "html", "liquid" },
+        },
       },
     },
   },
