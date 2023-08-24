@@ -1,4 +1,5 @@
-vim.g.sonokai_style = "atlantis"
+-- default, atlantis, andromeda, shusia, maia, espresso
+vim.g.sonokai_style = "default"
 vim.g.colorscheme = "sonokai"
 vim.g.sonokai_better_performance = 1
 
