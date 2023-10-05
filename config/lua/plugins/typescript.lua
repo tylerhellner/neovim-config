@@ -10,7 +10,7 @@ return {
     end,
   },
   {
-    "jose-elias-alvarez/null-ls.nvim",
+    "nvimtools/none-ls.nvim",
     opts = function(_, opts)
       table.insert(opts.sources, require("typescript.extensions.null-ls.code-actions"))
     end,
