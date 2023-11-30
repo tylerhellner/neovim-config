@@ -1,7 +1,13 @@
-return { -- NULL-LS
-  "nvimtools/none-ls.nvim",
-  opts = function(_, opts)
-    local null_ls = require("null-ls")
-    table.insert(opts.sources, null_ls.builtins.diagnostics.actionlint)
-  end,
+-- I don't know if this works to be honest
+return {
+  "mfussenegger/nvim-lint",
+  opts = {
+    linters = {
+      actionlint = {
+        condition = function(ctx)
+          return vim.fs.find({ "workflows" }, { path = ctx.filename, upward = true, stop = "../../" })
+        end,
+      },
+    },
+  },
 }
