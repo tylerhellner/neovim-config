@@ -1,3 +1,4 @@
+--- sets up anything Mason, Treesitter, and LSP related
 return {
   {
     "nvim-treesitter/nvim-treesitter",
