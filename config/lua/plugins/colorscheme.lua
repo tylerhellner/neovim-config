@@ -1,16 +1,15 @@
 -- default, atlantis, andromeda, shusia, maia, espresso
-vim.g.sonokai_style = "default"
-vim.g.colorscheme = "sonokai"
-vim.g.sonokai_better_performance = 1
-
 return {
   {
-    "sainnhe/sonokai",
+    "loctvl842/monokai-pro.nvim",
+    config = function()
+      require("monokai-pro").setup()
+    end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "sonokai",
+      colorscheme = "monokai-pro",
     },
   },
 }
